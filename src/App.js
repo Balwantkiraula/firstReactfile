@@ -1,6 +1,6 @@
 
 import ExpenseItem from './components/Expenses/ExpenseItem';
-function App() {
+const App = () => {
   const expenses=[ 
     {title: 'Car Insurance', amount: 256.45, date: new Date(2023, 3, 16)}, 
   {title: 'Car', amount: 25687.45, date: new Date(2023, 3, 6)}, 
