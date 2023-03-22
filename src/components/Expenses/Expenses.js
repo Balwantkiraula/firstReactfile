@@ -1,15 +1,15 @@
+import React from 'react';
 import './Expenses.css';
 import ExpenseItem from './ExpenseItem';
 import Card from '../UI/Card';
 
-
 const Expenses = (props) => {
 return (
     <Card className="expenses">
-         <ExpenseItem title={expenses[0].title} amount={expenses[0].amount} date={expenses[0].date}></ExpenseItem> 
-      <ExpenseItem title={expenses[1].title} amount={expenses[1].amount} date={expenses[1].date}></ExpenseItem>
-       <ExpenseItem title={expenses[2].title} amount={expenses[2].amount} date={expenses[2].date}></ExpenseItem> 
-       <ExpenseItem title={expenses[3].title} amount={expenses[3].amount} date={expenses[3].date}></ExpenseItem>
+         <ExpenseItem title={props[0].title} amount={props[0].amount} date={props[0].date}></ExpenseItem> 
+      <ExpenseItem title={props[1].title} amount={props[1].amount} date={props[1].date}></ExpenseItem>
+       <ExpenseItem title={props[2].title} amount={props[2].amount} date={props[2].date}></ExpenseItem> 
+       <ExpenseItem title={props[3].title} amount={props[3].amount} date={props[3].date}></ExpenseItem>
     </Card>
 );
 }
